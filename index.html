@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+
+<link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+
+<!-- Only needed if you want font icons -->
+<link href="style.css" rel="stylesheet">
+
+<link href="modal-pop-up.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="wrapper">
+  
+  <div id="2q-page-1" style="display:block">
+    <div class="primary-text">Question #1</div>
+    <div class="primary-text">
+      Do you beleive you will go to heaven when you die?
+    </div>
+    <div class="list-option">Yes</div>
+    <div class="list-option">No</div>
+    <div class="list-option">I hope so</div>
+    <div class="list-option">I'm not sure</div>
+  </div>
+
+  <div id="2q-page-2" style="display:none">
+    <div class="primary-text">Question #2</div>
+    <div class="primary-text">
+      Why do you beleive this?
+    </div>
+    <div class="list-option">
+      I've tried to keep the 10 commandments - 
+      <a href="#" id="myBtn" onclick="showModal('James 2:10')">James 2:10</a>
+    </div>
+    <div class="list-option">
+      I go to Church - 
+      <a href="#" id="myBtn" onclick="showModal('Titus 3:5')">Titus 3:5</a>
+    </div>
+    <div class="list-option">
+      I believe in God - 
+      <a href="#" id="myBtn" onclick="showModal('James 2:19')">James 2:19</a>
+    </div>
+    <div class="list-option">
+      I'm basically a good person - 
+      <a href="#" id="myBtn" onclick="showModal('Romans 3:12')">Romans 3:12</a>
+    </div>
+    <div class="list-option">
+      I've done the best I could - 
+      <a href="#" id="myBtn" onclick="showModal('Matthew 5:48')">Matthew 5:48</a>
+    </div>
+    <div class="list-option">
+      I've never hurt anyone 
+      <a href="#" id="myBtn" onclick="showModal('Matthew 5:21-22')">Matthew 5:21-22</a>
+    </div>
+    <div class="list-option">
+      Other
+    </div>
+  </div>
+
+  <div id="2q-page-3" style="display:none">
+    <div class="primary-text">
+      This may suprize you, but according to the Bible non of the answers
+      Printed on the previous page will get someone into heaven.
+      <a href="#" id="myBtn" onclick="showModal('1 John 5:13')">1 John 5:13</a>
+    </div>
+    <div class="primary-text">
+      "End of test"
+    </div>
+    <div class="primary-text">
+      Q. May I breifly share with you the amazing way the Bible describes how 
+      someone can get to heaven?
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div id="scripture-modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">×</span>
+        <h2 id="scripture-modal-header">???</h2>
+      </div>
+      <div class="modal-body" id="scripture-modal-body">
+        <p></p>
+      </div>
+      <div class="modal-footer">
+        <h3>NASB</h3>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<a id="nav-right" href="#" onclick="goRight()"> &#8594 </a>
+<a id="nav-left" href="#" onclick="goLeft()" style="display:none"> &#8592 </a>
+
+</body>
+
+<script src="modal-pop-up.js"></script>
+
+</html>
+
